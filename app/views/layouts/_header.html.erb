@@ -1,0 +1,13 @@
+<header>
+  <%= link_to logo, root_path %>    
+  <%# image_tag("logo.png", :alt => "Sample App", :class => "round") %>
+  <nav class="round">
+    <ul>
+      <li><%= link_to "Home", root_path, :id => 'header_home_link' %></li>
+      <li><%= link_to "About", about_path, :id => 'header_about_link' %></li>
+      <li><%= link_to "Contact", contact_path, :id => 'header_contact_link' %></li>
+      <li><%= link_to "Help", help_path, :id => 'header_help_link' %></li>
+      <li><%= link_to "Sign in", '#', :id => 'header_signin_link' %></li>
+    </ul>
+  </nav>
+</header>
